@@ -1,0 +1,12 @@
+services:
+  nodeapp:
+    container_name: sampleApp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: samplenew
+    restart: always
+    ports:
+      - 8080:3000
+    
+      
